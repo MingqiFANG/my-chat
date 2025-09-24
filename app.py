@@ -2,7 +2,7 @@ import os
 import streamlit as st
 from google import genai
 
-st.set_page_config(page_title="我的极简 Chat", page_icon="💬", layout="centered")
+st.set_page_config(page_title="Stock Chat", page_icon="💬", layout="centered")
 
 # 优先从 Streamlit Secrets 获取，其次读取环境变量
 API_KEY = st.secrets.get("GEMINI_API_KEY", os.environ.get("GEMINI_API_KEY", ""))
